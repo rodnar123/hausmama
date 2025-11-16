@@ -27,11 +27,11 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/services/childcare" className="hover:text-white">Child Care</Link></li>
-              <li><Link href="/services/seniorcare" className="hover:text-white">Senior Care</Link></li>
               <li><Link href="/services/housekeeping" className="hover:text-white">Housekeeping</Link></li>
               <li><Link href="/services/gardening" className="hover:text-white">Gardening</Link></li>
-              <li><Link href="/services/petcare" className="hover:text-white">Pet Care</Link></li>
               <li><Link href="/services/tutoring" className="hover:text-white">Tutoring</Link></li>
+              <li><Link href="/services/cooking" className="hover:text-white">Cooking</Link></li>
+              <li><Link href="/services/laundry" className="hover:text-white">Laundry</Link></li>
             </ul>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
                 <span>info@hausmama.pg</span>
               </li>
               <li className="mt-4">
-                <p className="text-xs">Port Moresby, Papua New Guinea</p>
+                <p className="text-xs">Lae, Morobe Province, Papua New Guinea</p>
               </li>
             </ul>
           </div>

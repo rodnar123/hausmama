@@ -161,9 +161,9 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold">Main Office</p>
                     <p className="text-sm text-gray-600">
-                      Level 3, Vision City<br />
-                      Waigani Drive, Port Moresby<br />
-                      NCD, Papua New Guinea
+                      2nd Floor, Lae Central<br />
+                      Butibam Road, Lae<br />
+                      Morobe Province, Papua New Guinea
                     </p>
                   </div>
                 </div>
@@ -233,49 +233,46 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Regional Offices */}
+        {/* Service Areas */}
         <div className="mt-16">
-          <h2 className="text-2xl font-bold text-center mb-8">Regional Offices</h2>
+          <h2 className="text-2xl font-bold text-center mb-8">Service Areas in Lae</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Lae Office</CardTitle>
+                <CardTitle className="text-lg">Central Lae</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-2">
-                  Bumbu Plaza, 2nd Floor<br />
-                  Milfordhaven Road, Lae<br />
-                  Morobe Province
+                  Top Town, Chinatown,<br />
+                  Eriku, Butibam<br />
                 </p>
-                <p className="text-sm text-blue-600">+675 456 7890</p>
+                <p className="text-sm text-blue-600">+675 123 4567</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Madang Office</CardTitle>
+                <CardTitle className="text-lg">Bumbu Area</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-2">
-                  Coastwatchers Avenue<br />
-                  Madang Town<br />
-                  Madang Province
+                  Bumbu, Kamkumung,<br />
+                  Taraka<br />
                 </p>
-                <p className="text-sm text-blue-600">+675 234 5678</p>
+                <p className="text-sm text-blue-600">+675 123 4567</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Mount Hagen Office</CardTitle>
+                <CardTitle className="text-lg">Outer Areas</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-2">
-                  Highlander Plaza<br />
-                  Mount Hagen<br />
-                  Western Highlands Province
+                  Tent City, Markham,<br />
+                  West Taraka<br />
                 </p>
-                <p className="text-sm text-blue-600">+675 345 6789</p>
+                <p className="text-sm text-blue-600">+675 123 4567</p>
               </CardContent>
             </Card>
           </div>

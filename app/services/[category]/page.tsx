@@ -14,13 +14,8 @@ const categoryInfo: Record<string, {
 }> = {
   childcare: {
     title: "Child Care Services",
-    description: "Find trusted nannies, babysitters, and daycare providers in PNG",
+    description: "Find trusted nannies, babysitters, and daycare providers in Lae",
     icon: "👶"
-  },
-  seniorcare: {
-    title: "Senior Care Services",
-    description: "Compassionate caregivers and companions for your loved ones",
-    icon: "❤️"
   },
   housekeeping: {
     title: "Housekeeping Services",
@@ -31,11 +26,6 @@ const categoryInfo: Record<string, {
     title: "Gardening Services",
     description: "Expert lawn care and landscaping services",
     icon: "🌿"
-  },
-  petcare: {
-    title: "Pet Care Services",
-    description: "Reliable pet sitting and dog walking services",
-    icon: "🐾"
   },
   tutoring: {
     title: "Tutoring Services",
@@ -64,8 +54,8 @@ const mockProviders = [
     reviewCount: 47,
     experience: 8,
     hourlyRate: 25,
-    location: "Port Moresby",
-    bio: "Experienced childcare provider with 8 years of experience working with families in Port Moresby.",
+    location: "Eriku, Lae",
+    bio: "Experienced childcare provider with 8 years of experience working with families in Lae.",
     verified: true,
     skills: ["Newborn care", "Meal preparation", "Light housekeeping"]
   },
@@ -77,7 +67,7 @@ const mockProviders = [
     reviewCount: 32,
     experience: 5,
     hourlyRate: 22,
-    location: "Port Moresby",
+    location: "Bumbu, Lae",
     bio: "Dedicated caregiver committed to providing quality care and support.",
     verified: true,
     skills: ["CPR Certified", "First Aid", "Flexible hours"]
@@ -90,7 +80,7 @@ const mockProviders = [
     reviewCount: 56,
     experience: 10,
     hourlyRate: 30,
-    location: "Port Moresby",
+    location: "Top Town, Lae",
     bio: "Professional service provider with excellent references and a passion for helping families.",
     verified: true,
     skills: ["Background checked", "Reliable", "Professional"]

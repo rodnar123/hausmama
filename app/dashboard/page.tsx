@@ -26,7 +26,7 @@ const mockUser = {
   name: "Sarah Johnson",
   email: "sarah.johnson@email.com",
   phone: "+675 7123 4567",
-  location: "Port Moresby, NCD",
+  location: "Eriku, Lae",
   memberSince: "January 2024",
   image: null
 }
@@ -55,7 +55,7 @@ const mockBookings = [
   {
     id: "3",
     provider: "Grace Buka",
-    service: "Senior Care",
+    service: "Tutoring",
     date: "2024-11-25",
     time: "10:00 AM",
     duration: 6,
@@ -72,7 +72,7 @@ const mockSavedProviders = [
     rating: 4.9,
     reviews: 47,
     hourlyRate: 25,
-    location: "Port Moresby"
+    location: "Eriku, Lae"
   },
   {
     id: "2",
@@ -81,16 +81,16 @@ const mockSavedProviders = [
     rating: 4.8,
     reviews: 35,
     hourlyRate: 30,
-    location: "Port Moresby"
+    location: "Top Town, Lae"
   },
   {
     id: "3",
-    name: "Emma Pato",
-    service: "Pet Care",
+    name: "Sarah Buka",
+    service: "Housekeeping",
     rating: 4.7,
     reviews: 28,
     hourlyRate: 20,
-    location: "Lae"
+    location: "Bumbu, Lae"
   }
 ]
 

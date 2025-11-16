@@ -5,10 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { 
   Baby, 
-  Heart, 
   Home, 
   Leaf, 
-  PawPrint, 
   BookOpen, 
   ChefHat, 
   Shirt,
@@ -23,10 +21,8 @@ import { useRouter } from "next/navigation"
 
 const serviceCategories = [
   { icon: Baby, label: "Child Care", value: "childcare" },
-  { icon: Heart, label: "Senior Care", value: "seniorcare" },
   { icon: Home, label: "Housekeeping", value: "housekeeping" },
   { icon: Leaf, label: "Gardening", value: "gardening" },
-  { icon: PawPrint, label: "Pet Care", value: "petcare" },
   { icon: BookOpen, label: "Tutoring", value: "tutoring" },
   { icon: ChefHat, label: "Cooking", value: "cooking" },
   { icon: Shirt, label: "Laundry", value: "laundry" }
@@ -192,13 +188,14 @@ export default function PostJobPage() {
                         required
                       >
                         <option value="">Select location</option>
-                        <option value="port-moresby">Port Moresby</option>
-                        <option value="lae">Lae</option>
-                        <option value="madang">Madang</option>
-                        <option value="mount-hagen">Mount Hagen</option>
-                        <option value="goroka">Goroka</option>
-                        <option value="kokopo">Kokopo</option>
-                        <option value="wewak">Wewak</option>
+                        <option value="eriku">Eriku</option>
+                        <option value="butibam">Butibam</option>
+                        <option value="bumbu">Bumbu</option>
+                        <option value="toptown">Top Town</option>
+                        <option value="kamkumung">Kamkumung</option>
+                        <option value="tentcity">Tent City</option>
+                        <option value="taraka">Taraka</option>
+                        <option value="chinatown">Chinatown</option>
                       </select>
                     </div>
 

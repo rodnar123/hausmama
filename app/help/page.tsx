@@ -171,7 +171,7 @@ export default function HelpPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  We currently serve Port Moresby, Lae, Madang, Mount Hagen, Goroka, Kokopo, Wewak, and surrounding areas. We're expanding to new regions regularly.
+                  We currently serve Lae and surrounding areas including Eriku, Butibam, Bumbu, Top Town, Kamkumung, Tent City, Taraka, and Chinatown. We're expanding to new regions regularly.
                 </p>
               </CardContent>
             </Card>

@@ -30,7 +30,7 @@ export default function AboutPage() {
                 HausMama was founded with a simple yet powerful mission: to make it easier for Papua New Guinea families to find trustworthy, qualified service providers for their homes and loved ones.
               </p>
               <p className="text-lg text-gray-600 mb-4">
-                We understand the challenges PNG families face in finding reliable childcare, senior care, housekeeping, and other essential services. Our platform brings together vetted professionals and families who need them, creating a safer, more connected community.
+                We understand the challenges Lae families face in finding reliable childcare, housekeeping, and other essential services. Our platform brings together vetted professionals and families who need them, creating a safer, more connected community.
               </p>
               <p className="text-lg text-gray-600">
                 We're not just a marketplace—we're building trust, creating opportunities, and strengthening communities across Papua New Guinea.
@@ -84,31 +84,31 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Impact
+              Our Impact in Lae
             </h2>
             <p className="text-lg text-gray-600">
-              Making a difference across Papua New Guinea
+              Making a difference across Lae and Morobe Province
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <Card className="text-center">
               <CardContent className="p-8">
-                <p className="text-4xl font-bold text-blue-600 mb-2">885+</p>
+                <p className="text-4xl font-bold text-blue-600 mb-2">150+</p>
                 <p className="text-gray-600">Verified Providers</p>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="p-8">
-                <p className="text-4xl font-bold text-blue-600 mb-2">2,500+</p>
-                <p className="text-gray-600">PNG Families Served</p>
+                <p className="text-4xl font-bold text-blue-600 mb-2">500+</p>
+                <p className="text-gray-600">Lae Families Served</p>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="p-8">
-                <p className="text-4xl font-bold text-blue-600 mb-2">15,000+</p>
+                <p className="text-4xl font-bold text-blue-600 mb-2">3,000+</p>
                 <p className="text-gray-600">Services Completed</p>
               </CardContent>
             </Card>
@@ -143,7 +143,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  We're based in PNG and serve communities across Port Moresby, Lae, Madang, Mount Hagen, and beyond. We understand local needs and cultural contexts.
+                  We're based in Lae and serve communities across the city and surrounding areas. We understand local needs and cultural contexts specific to Morobe Province.
                 </p>
               </CardContent>
             </Card>
@@ -189,8 +189,8 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Michael Tau", role: "Founder & CEO", location: "Port Moresby" },
-              { name: "Sarah Kila", role: "Head of Operations", location: "Port Moresby" },
+              { name: "Michael Tau", role: "Founder & CEO", location: "Lae" },
+              { name: "Sarah Kila", role: "Head of Operations", location: "Lae" },
               { name: "David Wong", role: "Head of Provider Success", location: "Lae" }
             ].map((member) => (
               <Card key={member.name}>

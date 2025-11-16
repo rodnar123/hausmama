@@ -12,7 +12,7 @@ export default function BookingConfirmationPage() {
     date: "November 25, 2024",
     time: "9:00 AM",
     duration: 4,
-    location: "Port Moresby, NCD",
+    location: "Eriku, Lae",
     price: 100,
     status: "confirmed"
   }

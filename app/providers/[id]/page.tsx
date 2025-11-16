@@ -15,8 +15,8 @@ const mockProvider = {
   reviewCount: 47,
   experience: 8,
   hourlyRate: 25,
-  location: "Port Moresby, NCD",
-  bio: "Experienced childcare provider with 8 years of experience working with families in Port Moresby. I am passionate about providing quality care for children and have worked with families from diverse backgrounds. I am CPR certified and have a background in early childhood education.",
+  location: "Eriku, Lae",
+  bio: "Experienced childcare provider with 8 years of experience working with families in Lae. I am passionate about providing quality care for children and have worked with families from diverse backgrounds. I am CPR certified and have a background in early childhood education.",
   verified: true,
   verifications: {
     backgroundCheck: true,

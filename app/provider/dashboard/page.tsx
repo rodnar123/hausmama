@@ -26,7 +26,7 @@ const mockProvider = {
   name: "Mary Kila",
   email: "mary.kila@email.com",
   phone: "+675 7123 4567",
-  location: "Port Moresby, NCD",
+  location: "Eriku, Lae",
   rating: 4.9,
   reviews: 47,
   memberSince: "January 2023",
@@ -90,14 +90,14 @@ const mockJobPosts = [
   {
     id: "1",
     title: "Nanny needed for twin toddlers",
-    location: "Port Moresby",
+    location: "Eriku, Lae",
     rate: "K25-30/hr",
     posted: "2 days ago"
   },
   {
     id: "2",
     title: "Weekend babysitter required",
-    location: "Port Moresby",
+    location: "Top Town, Lae",
     rate: "K20/hr",
     posted: "5 days ago"
   }

@@ -5,10 +5,8 @@ import { Input } from "@/components/ui/input"
 import { Card, CardDescription, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { 
   Baby, 
-  Heart, 
   Home, 
   Leaf, 
-  PawPrint, 
   BookOpen, 
   ChefHat, 
   Shirt,
@@ -33,16 +31,6 @@ const services = [
     providers: "150+"
   },
   {
-    icon: Heart,
-    title: "Senior Care",
-    description: "Compassionate companions and caregivers",
-    details: "Elderly care and daily assistance",
-    href: "/services/seniorcare",
-    color: "text-red-600",
-    bgColor: "bg-red-50",
-    providers: "80+"
-  },
-  {
     icon: Home,
     title: "Housekeeping",
     description: "Professional cleaning and home maintenance",
@@ -61,16 +49,6 @@ const services = [
     color: "text-green-600",
     bgColor: "bg-green-50",
     providers: "120+"
-  },
-  {
-    icon: PawPrint,
-    title: "Pet Care",
-    description: "Reliable pet sitting and dog walking",
-    details: "For dogs, cats, and other pets",
-    href: "/services/petcare",
-    color: "text-orange-600",
-    bgColor: "bg-orange-50",
-    providers: "90+"
   },
   {
     icon: BookOpen,
@@ -372,7 +350,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <CardTitle className="text-lg">Sarah Johnson</CardTitle>
-                    <CardDescription>Port Moresby • Mother of 2</CardDescription>
+                    <CardDescription>Lae • Mother of 2</CardDescription>
                   </div>
                 </div>
                 <div className="flex space-x-1">
@@ -420,7 +398,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <CardTitle className="text-lg">Grace Buka</CardTitle>
-                    <CardDescription>Port Moresby • Caregiver</CardDescription>
+                    <CardDescription>Lae • Parent</CardDescription>
                   </div>
                 </div>
                 <div className="flex space-x-1">
@@ -431,7 +409,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 italic">
-                  "My father needed daily care, and HausMama connected us with an amazing caregiver. The whole family has peace of mind knowing he's well looked after. Thank you, HausMama!"
+                  "Finding reliable childcare was always a challenge. HausMama connected us with an amazing nanny who my children love. The verification process gave us complete confidence!"
                 </p>
               </CardContent>
             </Card>
@@ -444,7 +422,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <CardTitle className="text-lg">James Kila</CardTitle>
-                    <CardDescription>Madang • Parent</CardDescription>
+                    <CardDescription>Lae • Parent</CardDescription>
                   </div>
                 </div>
                 <div className="flex space-x-1">
@@ -468,7 +446,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <CardTitle className="text-lg">Emma Pato</CardTitle>
-                    <CardDescription>Goroka • Pet Owner</CardDescription>
+                    <CardDescription>Lae • Working Mom</CardDescription>
                   </div>
                 </div>
                 <div className="flex space-x-1">
@@ -479,7 +457,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 italic">
-                  "Finding trustworthy pet care in Goroka used to be so difficult. HausMama changed that! My dogs are happy and well-cared for when I travel for work. Highly recommend!"
+                  "As a busy mom, finding a cook through HausMama was a lifesaver. My family enjoys healthy, delicious meals and I have more time with my children. Highly recommend!"
                 </p>
               </CardContent>
             </Card>
@@ -492,7 +470,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <CardTitle className="text-lg">Michael Wong</CardTitle>
-                    <CardDescription>Port Moresby • Business Owner</CardDescription>
+                    <CardDescription>Lae • Business Owner</CardDescription>
                   </div>
                 </div>
                 <div className="flex space-x-1">
@@ -510,7 +488,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-4">Join over 2,500 satisfied PNG families</p>
+            <p className="text-gray-600 mb-4">Join over 500 satisfied Lae families</p>
             <Link href="/signup">
               <Button size="lg">Get Started Today</Button>
             </Link>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Baby, Heart, Home, Leaf, PawPrint, BookOpen, ChefHat, Shirt, Search } from "lucide-react"
+import { Baby, Home, Leaf, BookOpen, ChefHat, Shirt, Search } from "lucide-react"
 import Link from "next/link"
 
 const services = [
@@ -13,16 +13,6 @@ const services = [
     color: "text-pink-600",
     bgColor: "bg-pink-50",
     providers: "150+"
-  },
-  {
-    icon: Heart,
-    title: "Senior Care",
-    description: "Compassionate companions and caregivers",
-    details: "Elderly care and daily assistance",
-    href: "/services/seniorcare",
-    color: "text-red-600",
-    bgColor: "bg-red-50",
-    providers: "80+"
   },
   {
     icon: Home,
@@ -43,16 +33,6 @@ const services = [
     color: "text-green-600",
     bgColor: "bg-green-50",
     providers: "120+"
-  },
-  {
-    icon: PawPrint,
-    title: "Pet Care",
-    description: "Reliable pet sitting and dog walking",
-    details: "For dogs, cats, and other pets",
-    href: "/services/petcare",
-    color: "text-orange-600",
-    bgColor: "bg-orange-50",
-    providers: "90+"
   },
   {
     icon: BookOpen,
@@ -97,7 +77,7 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="text-xl text-blue-100 mb-8">
-              Browse all available services and find the perfect provider for your needs across Papua New Guinea
+              Browse all available services and find the perfect provider for your needs in Lae
             </p>
             <div className="max-w-2xl mx-auto">
               <div className="relative">
@@ -171,17 +151,17 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Cities Served */}
+      {/* Suburbs Served */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Serving Communities Across PNG
+              Serving Lae and Surrounding Areas
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
-              {["Port Moresby", "Lae", "Madang", "Mount Hagen", "Goroka", "Kokopo", "Wewak", "Popondetta"].map((city) => (
-                <span key={city} className="bg-blue-50 text-blue-700 px-6 py-3 rounded-full font-medium">
-                  {city}
+              {["Eriku", "Butibam", "Bumbu", "Top Town", "Kamkumung", "Tent City", "Taraka", "Chinatown"].map((suburb) => (
+                <span key={suburb} className="bg-blue-50 text-blue-700 px-6 py-3 rounded-full font-medium">
+                  {suburb}
                 </span>
               ))}
             </div>

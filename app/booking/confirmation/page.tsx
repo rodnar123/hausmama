@@ -108,9 +108,9 @@ export default function BookingConfirmationPage() {
                   1
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Confirmation Email</p>
+                  <p className="font-semibold text-gray-900">HausMama Review</p>
                   <p className="text-sm text-gray-600">
-                    You'll receive a confirmation email with all booking details and {booking.provider}'s contact information.
+                    Our team will review your request and coordinate with {booking.provider} to confirm availability within 24 hours.
                   </p>
                 </div>
               </div>
@@ -120,9 +120,9 @@ export default function BookingConfirmationPage() {
                   2
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Provider Contact</p>
+                  <p className="font-semibold text-gray-900">Confirmation Email</p>
                   <p className="text-sm text-gray-600">
-                    {booking.provider} will reach out to confirm details and discuss any specific requirements.
+                    You'll receive a confirmation email from HausMama with all booking details once the provider confirms availability.
                   </p>
                 </div>
               </div>
@@ -134,7 +134,7 @@ export default function BookingConfirmationPage() {
                 <div>
                   <p className="font-semibold text-gray-900">Service Day</p>
                   <p className="text-sm text-gray-600">
-                    {booking.provider} will arrive at the scheduled time. Payment is due after service completion.
+                    {booking.provider} will arrive at the scheduled time. HausMama manages all payment processing for your protection.
                   </p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function BookingConfirmationPage() {
                 <div>
                   <p className="font-semibold text-gray-900">Leave a Review</p>
                   <p className="text-sm text-gray-600">
-                    After the service, please share your experience to help other PNG families.
+                    After the service, please share your experience to help other Lae families.
                   </p>
                 </div>
               </div>
@@ -156,10 +156,10 @@ export default function BookingConfirmationPage() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4">
-          <Link href={`/messages?provider=mary-kila`} className="flex-1">
+          <Link href="/contact?type=booking-inquiry" className="flex-1">
             <Button className="w-full" size="lg">
               <MessageCircle size={20} className="mr-2" />
-              Message {booking.provider}
+              Contact HausMama
             </Button>
           </Link>
           <Link href="/dashboard" className="flex-1">

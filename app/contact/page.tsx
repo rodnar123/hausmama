@@ -51,9 +51,24 @@ export default function ContactPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Send Us a Message</CardTitle>
-                <CardDescription>Fill out the form below and we'll get back to you within 24 hours</CardDescription>
+                <CardDescription>All service requests and communications go through HausMama. Our team will coordinate with providers on your behalf and respond within 24 hours.</CardDescription>
               </CardHeader>
               <CardContent>
+                <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <MessageCircle className="h-5 w-5 text-blue-600" />
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm text-blue-900 font-medium">
+                        Agency-Managed Service
+                      </p>
+                      <p className="text-xs text-blue-700 mt-1">
+                        For your safety and quality assurance, all provider communications are managed by HausMama. We review requests, coordinate with providers, and ensure proper vetting before connecting families with service providers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
@@ -114,9 +129,11 @@ export default function ContactPage() {
                         required
                       >
                         <option value="">Select a subject</option>
+                        <option value="service-request">Service Request</option>
+                        <option value="booking-inquiry">Booking Inquiry</option>
+                        <option value="provider-application">Provider Application</option>
                         <option value="general">General Inquiry</option>
                         <option value="support">Technical Support</option>
-                        <option value="provider">Become a Provider</option>
                         <option value="billing">Billing & Payments</option>
                         <option value="safety">Safety Concern</option>
                         <option value="feedback">Feedback</option>

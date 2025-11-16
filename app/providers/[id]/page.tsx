@@ -320,23 +320,25 @@ export default function ProviderProfilePage({
                     </select>
                   </div>
 
-                  <Link href={`/booking?provider=${provider.id}&service=${selectedService}`}>
+                  <Link href={`/contact?type=service-request&provider=${provider.id}&service=${selectedService}`}>
                     <Button className="w-full" size="lg">
                       <Calendar className="mr-2" size={18} />
-                      Book Now
+                      Request Service
                     </Button>
                   </Link>
 
-                  <Link href={`/messages?provider=${provider.id}`}>
-                    <Button variant="outline" className="w-full" size="lg">
-                      <MessageCircle className="mr-2" size={18} />
-                      Send Message
-                    </Button>
-                  </Link>
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <p className="text-sm text-blue-900 font-medium mb-1">
+                      All requests go through HausMama
+                    </p>
+                    <p className="text-xs text-blue-700">
+                      Our team will review your request, coordinate with the provider, and get back to you within 24 hours.
+                    </p>
+                  </div>
 
                   <div className="pt-4 border-t">
                     <p className="text-sm text-gray-600 text-center">
-                      Response time: Usually within 2 hours
+                      Response time: Within 24 hours
                     </p>
                   </div>
                 </div>

@@ -403,8 +403,8 @@ export default function ServiceCategoryPage({
                       View Profile
                     </Button>
                   </Link>
-                  <Link href={`/messages?provider=${provider.id}`} className="flex-1">
-                    <Button className="w-full">Contact</Button>
+                  <Link href={`/contact?type=service-request&provider=${provider.id}`} className="flex-1">
+                    <Button className="w-full">Request Service</Button>
                   </Link>
                 </div>
               </CardContent>

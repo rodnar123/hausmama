@@ -239,10 +239,10 @@ export default function DashboardPage() {
                             </span>
                             <span className="text-lg font-bold">K{booking.price}</span>
                             <div className="flex gap-2">
-                              <Link href={`/messages?provider=${booking.id}`}>
+                              <Link href={`/contact?type=booking-inquiry&booking=${booking.id}`}>
                                 <Button size="sm" variant="outline">
                                   <MessageCircle size={14} className="mr-1" />
-                                  Message
+                                  Contact Agency
                                 </Button>
                               </Link>
                               {booking.status === "completed" && (
@@ -299,8 +299,8 @@ export default function DashboardPage() {
                           <Link href={`/providers/${provider.id}`} className="flex-1">
                             <Button variant="outline" size="sm" className="w-full">View Profile</Button>
                           </Link>
-                          <Link href={`/booking?provider=${provider.id}`} className="flex-1">
-                            <Button size="sm" className="w-full">Book Now</Button>
+                          <Link href={`/contact?type=service-request&provider=${provider.id}`} className="flex-1">
+                            <Button size="sm" className="w-full">Request Service</Button>
                           </Link>
                         </div>
                       </CardContent>

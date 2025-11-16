@@ -94,7 +94,7 @@ export default function HelpPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Browse providers, view their profiles, and click "Contact" or "Book Now". You can message providers directly to discuss details before confirming a booking.
+                  Browse providers, view their profiles, and click "Request Service". Submit your request through our contact form, and our team will coordinate with the provider and get back to you within 24 hours with availability and next steps.
                 </p>
               </CardContent>
             </Card>
@@ -116,7 +116,7 @@ export default function HelpPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Yes, contact your provider directly through our messaging system to discuss changes. Cancellation policies vary by provider, so review their terms before booking.
+                  Yes, contact HausMama through our contact form or call us to discuss changes. Cancellation policies vary by provider, and our team will coordinate any modifications with the provider on your behalf.
                 </p>
               </CardContent>
             </Card>

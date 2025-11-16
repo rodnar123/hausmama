@@ -64,9 +64,9 @@ export default function HowItWorksPage() {
                 <div className="text-blue-600 mb-4 flex justify-center">
                   <MessageCircle size={48} />
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-center">Compare & Connect</h3>
+                <h3 className="text-2xl font-bold mb-3 text-center">Compare & Request</h3>
                 <p className="text-gray-600 text-center mb-4">
-                  Review detailed profiles and reach out to your top choices
+                  Review detailed profiles and submit your service request
                 </p>
                 <ul className="text-sm text-gray-500 space-y-2">
                   <li className="flex items-center">
@@ -75,7 +75,7 @@ export default function HowItWorksPage() {
                   </li>
                   <li className="flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
-                    Message providers directly
+                    Submit request through HausMama
                   </li>
                   <li className="flex items-center">
                     <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>

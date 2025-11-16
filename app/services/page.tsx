@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Baby, Home, Leaf, BookOpen, ChefHat, Shirt, Search } from "lucide-react"
+import { Baby, Home, Leaf, BookOpen, ChefHat, Search } from "lucide-react"
 import Link from "next/link"
 
 const services = [
@@ -53,16 +53,6 @@ const services = [
     color: "text-yellow-600",
     bgColor: "bg-yellow-50",
     providers: "75+"
-  },
-  {
-    icon: Shirt,
-    title: "Laundry",
-    description: "Professional washing and ironing services",
-    details: "Pickup and delivery available",
-    href: "/services/laundry",
-    color: "text-indigo-600",
-    bgColor: "bg-indigo-50",
-    providers: "60+"
   }
 ]
 

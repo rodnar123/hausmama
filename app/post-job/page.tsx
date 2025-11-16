@@ -9,7 +9,6 @@ import {
   Leaf, 
   BookOpen, 
   ChefHat, 
-  Shirt,
   Calendar,
   Clock,
   DollarSign,
@@ -24,8 +23,7 @@ const serviceCategories = [
   { icon: Home, label: "Housekeeping", value: "housekeeping" },
   { icon: Leaf, label: "Gardening", value: "gardening" },
   { icon: BookOpen, label: "Tutoring", value: "tutoring" },
-  { icon: ChefHat, label: "Cooking", value: "cooking" },
-  { icon: Shirt, label: "Laundry", value: "laundry" }
+  { icon: ChefHat, label: "Cooking", value: "cooking" }
 ]
 
 export default function PostJobPage() {

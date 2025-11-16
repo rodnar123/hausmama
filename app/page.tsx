@@ -9,7 +9,6 @@ import {
   Leaf, 
   BookOpen, 
   ChefHat, 
-  Shirt,
   Search,
   Star,
   Shield,
@@ -69,16 +68,6 @@ const services = [
     color: "text-yellow-600",
     bgColor: "bg-yellow-50",
     providers: "75+"
-  },
-  {
-    icon: Shirt,
-    title: "Laundry",
-    description: "Professional washing and ironing services",
-    details: "Pickup and delivery available",
-    href: "/services/laundry",
-    color: "text-indigo-600",
-    bgColor: "bg-indigo-50",
-    providers: "60+"
   }
 ]
 

@@ -36,11 +36,6 @@ const categoryInfo: Record<string, {
     title: "Cooking Services",
     description: "Professional meal preparation and catering",
     icon: "👨‍🍳"
-  },
-  laundry: {
-    title: "Laundry Services",
-    description: "Washing, ironing, and garment care services",
-    icon: "👔"
   }
 }
 

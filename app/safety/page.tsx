@@ -7,14 +7,16 @@ export default function SafetyPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20">
+      <section className="bg-gradient-to-br from-[#F5E6C5] to-[#e8d9b5] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <Shield size={64} className="mx-auto mb-6" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Your Safety is Our Priority
+            <div className="bg-[#3F422F] text-[#F5E6C5] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Shield size={40} />
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Your <span className="text-[#3F422F]">Safety</span> is Our Priority
             </h1>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               We take comprehensive measures to ensure every provider on HausMama is thoroughly vetted and verified
             </p>
           </div>
@@ -34,9 +36,9 @@ export default function SafetyPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="text-center">
+            <Card className="text-center hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="bg-green-100 text-green-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#F5E6C5] text-[#3F422F] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle size={40} />
                 </div>
                 <CardTitle>Background Check</CardTitle>
@@ -48,9 +50,9 @@ export default function SafetyPage() {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="bg-blue-100 text-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#F5E6C5] text-[#D78B9A] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BadgeCheck size={40} />
                 </div>
                 <CardTitle>Identity Verification</CardTitle>
@@ -62,9 +64,9 @@ export default function SafetyPage() {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="bg-purple-100 text-purple-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#F5E6C5] text-[#9F886F] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <FileCheck size={40} />
                 </div>
                 <CardTitle>Reference Checks</CardTitle>
@@ -76,9 +78,9 @@ export default function SafetyPage() {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center hover:shadow-xl transition-shadow">
               <CardHeader>
-                <div className="bg-orange-100 text-orange-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#F5E6C5] text-[#3F422F] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award size={40} />
                 </div>
                 <CardTitle>Certifications</CardTitle>
@@ -106,10 +108,12 @@ export default function SafetyPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card>
+            <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex items-center space-x-3">
-                  <Lock className="text-blue-600" size={32} />
+                  <div className="bg-[#F5E6C5] text-[#3F422F] w-12 h-12 rounded-lg flex items-center justify-center">
+                    <Lock size={24} />
+                  </div>
                   <CardTitle>Secure Payments</CardTitle>
                 </div>
               </CardHeader>
@@ -120,10 +124,12 @@ export default function SafetyPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex items-center space-x-3">
-                  <Eye className="text-blue-600" size={32} />
+                  <div className="bg-[#F5E6C5] text-[#D78B9A] w-12 h-12 rounded-lg flex items-center justify-center">
+                    <Eye size={24} />
+                  </div>
                   <CardTitle>Review System</CardTitle>
                 </div>
               </CardHeader>
@@ -134,10 +140,12 @@ export default function SafetyPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex items-center space-x-3">
-                  <Users className="text-blue-600" size={32} />
+                  <div className="bg-[#F5E6C5] text-[#9F886F] w-12 h-12 rounded-lg flex items-center justify-center">
+                    <Users size={24} />
+                  </div>
                   <CardTitle>In-App Messaging</CardTitle>
                 </div>
               </CardHeader>
@@ -148,10 +156,12 @@ export default function SafetyPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex items-center space-x-3">
-                  <Phone className="text-blue-600" size={32} />
+                  <div className="bg-[#F5E6C5] text-[#3F422F] w-12 h-12 rounded-lg flex items-center justify-center">
+                    <Phone size={24} />
+                  </div>
                   <CardTitle>24/7 Support</CardTitle>
                 </div>
               </CardHeader>
@@ -215,7 +225,7 @@ export default function SafetyPage() {
               <Card key={index}>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
-                    <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">
+                    <span className="bg-[#D78B9A] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm mr-3">
                       {index + 1}
                     </span>
                     {tip.title}
@@ -269,22 +279,22 @@ export default function SafetyPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-20 bg-[#3F422F] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Ready to Find Trusted Care?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/90">
             Join HausMama and connect with verified service providers in PNG
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/signup">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8">
+              <Button size="lg" className="bg-white text-[#3F422F] hover:bg-gray-100 text-lg px-8">
                 Get Started
               </Button>
             </Link>
             <Link href="/contact">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700 text-lg px-8">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#3F422F] text-lg px-8">
                 Contact Us
               </Button>
             </Link>

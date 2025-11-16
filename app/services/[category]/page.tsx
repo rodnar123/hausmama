@@ -129,14 +129,14 @@ export default function ServiceCategoryPage({
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-16">
+      <div className="bg-gradient-to-br from-[#3F422F] to-[#5a5d47] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="text-6xl mb-4">{info.icon}</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {info.title}
             </h1>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">
               {info.description}
             </p>
           </div>
@@ -189,7 +189,7 @@ export default function ServiceCategoryPage({
               <SlidersHorizontal size={16} className="mr-2" />
               More Filters
               {activeFiltersCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-[#D78B9A] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   {activeFiltersCount}
                 </span>
               )}
@@ -302,12 +302,12 @@ export default function ServiceCategoryPage({
                     type="checkbox"
                     checked={filters.verified}
                     onChange={(e) => setFilters({...filters, verified: e.target.checked})}
-                    className="w-4 h-4 text-blue-600 rounded"
+                    className="w-4 h-4 text-[#D78B9A] rounded"
                   />
                   <span className="text-sm font-medium text-gray-700">
                     Verified providers only
                   </span>
-                  <Shield className="text-blue-600" size={16} />
+                  <Shield className="text-[#D78B9A]" size={16} />
                 </label>
               </div>
             </div>
@@ -347,7 +347,7 @@ export default function ServiceCategoryPage({
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                    <div className="w-16 h-16 bg-[#9F886F] rounded-full flex items-center justify-center text-white text-2xl font-bold">
                       {provider.name.charAt(0)}
                     </div>
                     <div>
@@ -390,7 +390,7 @@ export default function ServiceCategoryPage({
                   {provider.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full"
+                      className="bg-[#F5E6C5] text-[#3F422F] text-xs px-3 py-1 rounded-full font-medium"
                     >
                       {skill}
                     </span>
@@ -413,7 +413,7 @@ export default function ServiceCategoryPage({
         </div>
 
         {/* Call to Action */}
-        <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
+        <div className="mt-12 bg-[#F5E6C5] rounded-lg p-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
             Can&apos;t Find What You&apos;re Looking For?
           </h3>

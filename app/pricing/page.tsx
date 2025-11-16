@@ -7,13 +7,13 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20">
+      <section className="bg-gradient-to-br from-[#F5E6C5] to-[#e8d9b5] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Simple, Transparent Pricing
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Simple, <span className="text-[#3F422F]">Transparent</span> Pricing
             </h1>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               Choose the plan that works best for your family. No hidden fees, cancel anytime.
             </p>
           </div>
@@ -64,9 +64,9 @@ export default function PricingPage() {
             </Card>
 
             {/* Premium Plan */}
-            <Card className="border-4 border-blue-600 hover:shadow-2xl transition-shadow relative">
+            <Card className="border-4 border-[#D78B9A] hover:shadow-2xl transition-shadow relative">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                <span className="bg-[#D78B9A] text-white px-4 py-1 rounded-full text-sm font-semibold">
                   MOST POPULAR
                 </span>
               </div>
@@ -256,9 +256,11 @@ export default function PricingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
-                <Zap className="text-blue-600 mb-4" size={40} />
+                <div className="bg-[#F5E6C5] text-[#3F422F] w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <Zap size={32} />
+                </div>
                 <CardTitle>Find Care Faster</CardTitle>
               </CardHeader>
               <CardContent>
@@ -268,9 +270,11 @@ export default function PricingPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
-                <MessageCircle className="text-blue-600 mb-4" size={40} />
+                <div className="bg-[#F5E6C5] text-[#D78B9A] w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <MessageCircle size={32} />
+                </div>
                 <CardTitle>Priority Access</CardTitle>
               </CardHeader>
               <CardContent>
@@ -280,9 +284,11 @@ export default function PricingPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-xl transition-shadow">
               <CardHeader>
-                <Star className="text-blue-600 mb-4" size={40} />
+                <div className="bg-[#F5E6C5] text-[#9F886F] w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <Star size={32} />
+                </div>
                 <CardTitle>Better Experience</CardTitle>
               </CardHeader>
               <CardContent>
@@ -341,22 +347,22 @@ export default function PricingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-20 bg-[#3F422F] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/90">
             Join thousands of PNG families finding trusted care providers
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/signup?plan=premium">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8">
+              <Button size="lg" className="bg-white text-[#3F422F] hover:bg-gray-100 text-lg px-8">
                 Start Premium Today
               </Button>
             </Link>
             <Link href="/signup?plan=basic">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700 text-lg px-8">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#3F422F] text-lg px-8">
                 Try Basic Free
               </Button>
             </Link>

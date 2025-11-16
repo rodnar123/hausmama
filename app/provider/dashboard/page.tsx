@@ -110,7 +110,7 @@ export default function ProviderDashboardPage() {
     switch(status) {
       case "confirmed": return "bg-green-100 text-green-800"
       case "pending": return "bg-yellow-100 text-yellow-800"
-      case "completed": return "bg-blue-100 text-blue-800"
+      case "completed": return "bg-[#F5E6C5] text-[#3F422F]"
       case "cancelled": return "bg-red-100 text-red-800"
       default: return "bg-gray-100 text-gray-800"
     }
@@ -130,7 +130,7 @@ export default function ProviderDashboardPage() {
           <div className="lg:col-span-1">
             <Card>
               <CardHeader className="text-center">
-                <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center text-white text-4xl font-bold mx-auto mb-4">
+                <div className="w-24 h-24 bg-[#D78B9A] rounded-full flex items-center justify-center text-white text-4xl font-bold mx-auto mb-4">
                   {mockProvider.name.charAt(0)}
                 </div>
                 <CardTitle className="text-xl">{mockProvider.name}</CardTitle>
@@ -253,7 +253,7 @@ export default function ProviderDashboardPage() {
                           <p className="text-sm text-gray-600">Total Earnings</p>
                           <p className="text-2xl font-bold text-gray-900">K{mockProvider.totalEarnings}</p>
                         </div>
-                        <TrendingUp className="text-blue-600" size={32} />
+                        <TrendingUp className="text-[#3F422F]" size={32} />
                       </div>
                     </CardContent>
                   </Card>
@@ -320,7 +320,7 @@ export default function ProviderDashboardPage() {
                   <CardContent>
                     <div className="space-y-3">
                       {mockMessages.slice(0, 3).map((msg) => (
-                        <div key={msg.id} className={`p-4 rounded-lg ${msg.unread ? "bg-blue-50" : "bg-gray-50"}`}>
+                        <div key={msg.id} className={`p-4 rounded-lg ${msg.unread ? "bg-[#F5E6C5]" : "bg-gray-50"}`}>
                           <div className="flex justify-between items-start mb-2">
                             <p className="font-semibold">{msg.from}</p>
                             <span className="text-xs text-gray-500">{msg.time}</span>
@@ -353,7 +353,7 @@ export default function ProviderDashboardPage() {
                       <CardContent className="p-6">
                         <div className="flex flex-col md:flex-row md:items-center justify-between">
                           <div className="flex items-start space-x-4 mb-4 md:mb-0">
-                            <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                            <div className="w-12 h-12 bg-[#3F422F] rounded-full flex items-center justify-center text-white text-xl font-bold">
                               {booking.client.charAt(0)}
                             </div>
                             <div>

@@ -10,10 +10,10 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'default', size = 'default', ...props }, ref) => {
     const variantStyles = {
-      default: 'bg-blue-600 text-white hover:bg-blue-700',
-      outline: 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50',
+      default: 'bg-[#D78B9A] text-white hover:bg-[#c77686]',
+      outline: 'border-2 border-[#9F886F] text-[#3F422F] hover:bg-[#F5E6C5]',
       ghost: 'hover:bg-gray-100',
-      link: 'text-blue-600 underline-offset-4 hover:underline'
+      link: 'text-[#3F422F] underline-offset-4 hover:underline font-medium'
     }
 
     const sizeStyles = {
@@ -25,7 +25,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 disabled:pointer-events-none disabled:opacity-50',
+          'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9F886F] disabled:pointer-events-none disabled:opacity-50',
           variantStyles[variant],
           sizeStyles[size],
           className

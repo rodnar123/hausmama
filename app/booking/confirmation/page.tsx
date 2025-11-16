@@ -50,7 +50,7 @@ export default function BookingConfirmationPage() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Service Provider</h3>
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                  <div className="w-16 h-16 bg-[#D78B9A] rounded-full flex items-center justify-center text-white text-2xl font-bold">
                     {booking.provider.charAt(0)}
                   </div>
                   <div>
@@ -91,7 +91,7 @@ export default function BookingConfirmationPage() {
                     <DollarSign size={16} className="mr-2" />
                     Total Amount
                   </p>
-                  <p className="text-2xl font-bold text-blue-600">K{booking.price}</p>
+                  <p className="text-2xl font-bold text-[#3F422F]">K{booking.price}</p>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@ export default function BookingConfirmationPage() {
         </div>
 
         {/* Need Help */}
-        <Card className="mt-8 bg-blue-50 border-blue-200">
+        <Card className="mt-8 bg-[#F5E6C5] border-[#D78B9A]">
           <CardContent className="p-6 text-center">
             <p className="text-gray-700 mb-4">
               Need to make changes or have questions?

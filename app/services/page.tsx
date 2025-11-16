@@ -10,8 +10,8 @@ const services = [
     description: "Nannies, babysitters, and daycare providers",
     details: "From newborns to school-age children",
     href: "/services/childcare",
-    color: "text-pink-600",
-    bgColor: "bg-pink-50",
+    color: "text-[#D78B9A]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "150+"
   },
   {
@@ -20,8 +20,8 @@ const services = [
     description: "Professional cleaning and home maintenance",
     details: "Daily, weekly, or one-time cleaning",
     href: "/services/housekeeping",
-    color: "text-blue-600",
-    bgColor: "bg-blue-50",
+    color: "text-[#3F422F]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "200+"
   },
   {
@@ -30,8 +30,8 @@ const services = [
     description: "Expert lawn care and landscaping",
     details: "Yard maintenance and garden design",
     href: "/services/gardening",
-    color: "text-green-600",
-    bgColor: "bg-green-50",
+    color: "text-[#3F422F]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "120+"
   },
   {
@@ -40,8 +40,8 @@ const services = [
     description: "Academic support for all subjects and grades",
     details: "Primary, secondary, and university",
     href: "/services/tutoring",
-    color: "text-purple-600",
-    bgColor: "bg-purple-50",
+    color: "text-[#9F886F]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "110+"
   },
   {
@@ -50,8 +50,8 @@ const services = [
     description: "Meal preparation and catering services",
     details: "Traditional PNG and modern cuisine",
     href: "/services/cooking",
-    color: "text-yellow-600",
-    bgColor: "bg-yellow-50",
+    color: "text-[#D78B9A]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "75+"
   }
 ]
@@ -60,13 +60,13 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20">
+      <section className="bg-gradient-to-br from-[#F5E6C5] to-[#e8d9b5] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Our Services
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Our <span className="text-[#3F422F]">Services</span>
             </h1>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               Browse all available services and find the perfect provider for your needs in Lae
             </p>
             <div className="max-w-2xl mx-auto">
@@ -75,7 +75,7 @@ export default function ServicesPage() {
                 <input
                   type="text"
                   placeholder="Search services..."
-                  className="w-full pl-12 pr-4 py-4 rounded-lg text-gray-900 text-lg"
+                  className="w-full pl-12 pr-4 py-4 rounded-lg text-gray-900 text-lg border-2 border-gray-200 focus:border-[#D78B9A] focus:outline-none"
                 />
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => (
               <Link key={service.title} href={service.href}>
-                <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full border-2 hover:border-blue-300">
+                <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full border-2 hover:border-[#D78B9A]">
                   <CardHeader>
                     <div className={`${service.bgColor} ${service.color} w-20 h-20 rounded-2xl flex items-center justify-center mb-4 mx-auto`}>
                       <service.icon size={40} strokeWidth={1.5} />
@@ -109,7 +109,7 @@ export default function ServicesPage() {
                     </CardDescription>
                     <div className="pt-3 border-t mt-4">
                       <p className="text-xs text-gray-500 text-center">{service.details}</p>
-                      <p className="text-sm font-semibold text-blue-600 text-center mt-2">
+                      <p className="text-sm font-semibold text-[#D78B9A] text-center mt-2">
                         {service.providers} providers
                       </p>
                     </div>
@@ -150,7 +150,7 @@ export default function ServicesPage() {
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
               {["Eriku", "Butibam", "Bumbu", "Top Town", "Kamkumung", "Tent City", "Taraka", "Chinatown"].map((suburb) => (
-                <span key={suburb} className="bg-blue-50 text-blue-700 px-6 py-3 rounded-full font-medium">
+                <span key={suburb} className="bg-[#F5E6C5] text-[#3F422F] px-6 py-3 rounded-full font-medium">
                   {suburb}
                 </span>
               ))}

@@ -94,14 +94,14 @@ export default function ProviderProfilePage({
               
               <CardHeader>
                 <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
-                  <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center text-white text-5xl font-bold flex-shrink-0">
+                  <div className="w-32 h-32 bg-[#9F886F] rounded-full flex items-center justify-center text-white text-5xl font-bold flex-shrink-0">
                     {provider.name.charAt(0)}
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center space-x-3 mb-2">
                       <CardTitle className="text-3xl">{provider.name}</CardTitle>
                       {provider.verified && (
-                        <div className="flex items-center space-x-1 bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
+                        <div className="flex items-center space-x-1 bg-[#F5E6C5] text-[#3F422F] px-3 py-1 rounded-full">
                           <Shield size={16} />
                           <span className="text-sm font-medium">Verified</span>
                         </div>
@@ -133,7 +133,7 @@ export default function ProviderProfilePage({
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Shield size={20} className="mr-2 text-blue-600" />
+                  <Shield size={20} className="mr-2 text-[#D78B9A]" />
                   Verification & Trust
                 </CardTitle>
                 <CardDescription>This provider has completed the following verifications</CardDescription>
@@ -150,11 +150,11 @@ export default function ProviderProfilePage({
                     </div>
                   )}
                   {provider.verifications.identityVerified && (
-                    <div className="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
-                      <BadgeCheck className="text-blue-600 flex-shrink-0" size={24} />
+                    <div className="flex items-center space-x-3 p-3 bg-[#F5E6C5] rounded-lg border border-[#D78B9A]">
+                      <BadgeCheck className="text-[#3F422F] flex-shrink-0" size={24} />
                       <div>
-                        <p className="font-semibold text-blue-900">ID Verified</p>
-                        <p className="text-xs text-blue-700">Government ID confirmed</p>
+                        <p className="font-semibold text-[#3F422F]">ID Verified</p>
+                        <p className="text-xs text-[#5a5d47]">Government ID confirmed</p>
                       </div>
                     </div>
                   )}
@@ -181,7 +181,7 @@ export default function ProviderProfilePage({
                   <p className="text-sm text-gray-600">
                     <Shield size={16} className="inline mr-1" />
                     All providers on HausMama undergo thorough verification to ensure your safety and peace of mind.
-                    <Link href="/safety" className="text-blue-600 hover:underline ml-1">Learn more about our safety process</Link>
+                    <Link href="/safety" className="text-[#3F422F] hover:underline ml-1">Learn more about our safety process</Link>
                   </p>
                 </div>
               </CardContent>
@@ -211,7 +211,7 @@ export default function ProviderProfilePage({
                   {provider.services.map((service) => (
                     <span
                       key={service}
-                      className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium"
+                      className="bg-[#D78B9A] text-white px-4 py-2 rounded-lg font-medium"
                     >
                       {service}
                     </span>
@@ -295,7 +295,7 @@ export default function ProviderProfilePage({
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <CardTitle>Book Service</CardTitle>
-                  <div className="flex items-center space-x-1 text-2xl font-bold text-blue-600">
+                  <div className="flex items-center space-x-1 text-2xl font-bold text-[#3F422F]">
                     <DollarSign size={24} />
                     <span>K{provider.hourlyRate}</span>
                     <span className="text-sm text-gray-500 font-normal">/hour</span>
@@ -327,7 +327,7 @@ export default function ProviderProfilePage({
                     </Button>
                   </Link>
 
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <div className="bg-[#F5E6C5] border border-[#D78B9A] rounded-lg p-4">
                     <p className="text-sm text-blue-900 font-medium mb-1">
                       All requests go through HausMama
                     </p>

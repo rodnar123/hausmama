@@ -65,17 +65,17 @@ export default function BecomeProviderPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20">
+      <section className="bg-gradient-to-br from-[#F5E6C5] to-[#e8d9b5] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Become a Service Provider
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Become a <span className="text-[#3F422F]">Service Provider</span>
             </h1>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               Turn your skills into income. Join HausMama and connect with families across Papua New Guinea who need your services.
             </p>
             <Link href="/signup">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button size="lg" className="bg-[#D78B9A] hover:bg-[#c77686] text-white">
                 Get Started Today
               </Button>
             </Link>
@@ -97,9 +97,9 @@ export default function BecomeProviderPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit) => (
-              <Card key={benefit.title}>
+              <Card key={benefit.title} className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <CardHeader>
-                  <div className="bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                  <div className="bg-[#F5E6C5] text-[#3F422F] w-16 h-16 rounded-full flex items-center justify-center mb-4">
                     <benefit.icon size={32} />
                   </div>
                   <CardTitle className="text-xl">{benefit.title}</CardTitle>
@@ -128,7 +128,7 @@ export default function BecomeProviderPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {steps.map((step) => (
               <div key={step.number} className="text-center">
-                <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                <div className="bg-gradient-to-br from-[#D78B9A] to-[#c77686] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {step.number}
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
@@ -167,7 +167,7 @@ export default function BecomeProviderPage() {
             ].map((service) => (
               <div
                 key={service}
-                className="bg-blue-50 text-blue-700 py-4 px-6 rounded-lg text-center font-medium"
+                className="bg-[#F5E6C5] text-[#3F422F] py-4 px-6 rounded-lg text-center font-medium"
               >
                 {service}
               </div>
@@ -177,7 +177,7 @@ export default function BecomeProviderPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-[#3F422F] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Earning?
@@ -186,7 +186,7 @@ export default function BecomeProviderPage() {
             Join HausMama today and start building your service business in Papua New Guinea
           </p>
           <Link href="/signup">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button size="lg" className="bg-[#D78B9A] hover:bg-[#c77686] text-white">
               Create Provider Account
             </Button>
           </Link>

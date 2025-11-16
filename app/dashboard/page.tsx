@@ -102,7 +102,7 @@ export default function DashboardPage() {
     switch(status) {
       case "confirmed": return "bg-green-100 text-green-800"
       case "pending": return "bg-yellow-100 text-yellow-800"
-      case "completed": return "bg-blue-100 text-blue-800"
+      case "completed": return "bg-[#F5E6C5] text-[#3F422F]"
       case "cancelled": return "bg-red-100 text-red-800"
       default: return "bg-gray-100 text-gray-800"
     }
@@ -122,7 +122,7 @@ export default function DashboardPage() {
           <div className="lg:col-span-1">
             <Card>
               <CardHeader className="text-center">
-                <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center text-white text-4xl font-bold mx-auto mb-4">
+                <div className="w-24 h-24 bg-[#D78B9A] rounded-full flex items-center justify-center text-white text-4xl font-bold mx-auto mb-4">
                   {mockUser.name.charAt(0)}
                 </div>
                 <CardTitle className="text-xl">{mockUser.name}</CardTitle>
@@ -293,7 +293,7 @@ export default function DashboardPage() {
                             <MapPin size={14} className="mr-1" />
                             {provider.location}
                           </span>
-                          <span className="font-semibold text-blue-600">K{provider.hourlyRate}/hr</span>
+                          <span className="font-semibold text-[#3F422F]">K{provider.hourlyRate}/hr</span>
                         </div>
                         <div className="flex gap-2">
                           <Link href={`/providers/${provider.id}`} className="flex-1">

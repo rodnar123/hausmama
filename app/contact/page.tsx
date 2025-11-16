@@ -31,13 +31,13 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20">
+      <section className="bg-gradient-to-br from-[#F5E6C5] to-[#e8d9b5] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Get in Touch
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Get in <span className="text-[#3F422F]">Touch</span>
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-gray-600">
               Have questions? We're here to help. Reach out to our team anytime.
             </p>
           </div>
@@ -54,16 +54,16 @@ export default function ContactPage() {
                 <CardDescription>All service requests and communications go through HausMama. Our team will coordinate with providers on your behalf and respond within 24 hours.</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6">
+                <div className="bg-[#F5E6C5] border-l-4 border-[#3F422F] p-4 mb-6">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <MessageCircle className="h-5 w-5 text-blue-600" />
+                      <MessageCircle className="h-5 w-5 text-[#3F422F]" />
                     </div>
                     <div className="ml-3">
-                      <p className="text-sm text-blue-900 font-medium">
+                      <p className="text-sm text-[#3F422F] font-medium">
                         Agency-Managed Service
                       </p>
-                      <p className="text-xs text-blue-700 mt-1">
+                      <p className="text-xs text-[#5a5d47] mt-1">
                         For your safety and quality assurance, all provider communications are managed by HausMama. We review requests, coordinate with providers, and ensure proper vetting before connecting families with service providers.
                       </p>
                     </div>
@@ -174,7 +174,7 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="text-blue-600 flex-shrink-0 mt-1" size={20} />
+                  <MapPin className="text-[#3F422F] flex-shrink-0 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Main Office</p>
                     <p className="text-sm text-gray-600">
@@ -186,7 +186,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <Phone className="text-blue-600 flex-shrink-0 mt-1" size={20} />
+                  <Phone className="text-[#D78B9A] flex-shrink-0 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Phone</p>
                     <p className="text-sm text-gray-600">+675 123 4567</p>
@@ -195,7 +195,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <Mail className="text-blue-600 flex-shrink-0 mt-1" size={20} />
+                  <Mail className="text-[#9F886F] flex-shrink-0 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Email</p>
                     <p className="text-sm text-gray-600">support@hausmama.com.pg</p>
@@ -204,7 +204,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <Clock className="text-blue-600 flex-shrink-0 mt-1" size={20} />
+                  <Clock className="text-[#D78B9A] flex-shrink-0 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Business Hours</p>
                     <p className="text-sm text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
@@ -220,24 +220,24 @@ export default function ContactPage() {
                 <CardTitle>Quick Links</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
-                <a href="/help" className="block text-blue-600 hover:underline text-sm">
+                <a href="/help" className="block text-[#3F422F] hover:underline text-sm font-medium">
                   Help Center & FAQs
                 </a>
-                <a href="/safety" className="block text-blue-600 hover:underline text-sm">
+                <a href="/safety" className="block text-[#3F422F] hover:underline text-sm">
                   Safety Information
                 </a>
-                <a href="/pricing" className="block text-blue-600 hover:underline text-sm">
+                <a href="/pricing" className="block text-[#D78B9A] hover:underline text-sm">
                   Pricing & Plans
                 </a>
-                <a href="/become-provider" className="block text-blue-600 hover:underline text-sm">
+                <a href="/become-provider" className="block text-[#D78B9A] hover:underline text-sm">
                   Become a Provider
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="bg-blue-50 border-blue-200">
+            <Card className="bg-[#F5E6C5] border-[#D78B9A]">
               <CardContent className="p-6">
-                <MessageCircle className="text-blue-600 mb-3" size={32} />
+                <MessageCircle className="text-[#3F422F] mb-3" size={32} />
                 <p className="font-semibold mb-2">Live Chat Available</p>
                 <p className="text-sm text-gray-700 mb-4">
                   Need immediate assistance? Chat with our support team.
@@ -263,7 +263,7 @@ export default function ContactPage() {
                   Top Town, Chinatown,<br />
                   Eriku, Butibam<br />
                 </p>
-                <p className="text-sm text-blue-600">+675 123 4567</p>
+                <p className="text-sm text-[#D78B9A]">+675 123 4567</p>
               </CardContent>
             </Card>
 
@@ -276,7 +276,7 @@ export default function ContactPage() {
                   Bumbu, Kamkumung,<br />
                   Taraka<br />
                 </p>
-                <p className="text-sm text-blue-600">+675 123 4567</p>
+                <p className="text-sm text-[#D78B9A]">+675 123 4567</p>
               </CardContent>
             </Card>
 
@@ -289,7 +289,7 @@ export default function ContactPage() {
                   Tent City, Markham,<br />
                   West Taraka<br />
                 </p>
-                <p className="text-sm text-blue-600">+675 123 4567</p>
+                <p className="text-sm text-[#D78B9A]">+675 123 4567</p>
               </CardContent>
             </Card>
           </div>

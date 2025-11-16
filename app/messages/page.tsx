@@ -127,13 +127,13 @@ function MessagesContent() {
                     key={conv.id}
                     onClick={() => setSelectedConversation(conv.id)}
                     className={`w-full p-4 text-left hover:bg-gray-50 transition-colors ${
-                      selectedConversation === conv.id ? "bg-blue-50" : ""
+                      selectedConversation === conv.id ? "bg-[#F5E6C5]" : ""
                     }`}
                   >
                     <div className="flex justify-between items-start mb-1">
                       <p className="font-semibold">{conv.providerName}</p>
                       {conv.unread > 0 && (
-                        <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">
+                        <span className="bg-[#D78B9A] text-white text-xs px-2 py-1 rounded-full">
                           {conv.unread}
                         </span>
                       )}
@@ -172,7 +172,7 @@ function MessagesContent() {
                         <div
                           className={`max-w-xs px-4 py-2 rounded-lg ${
                             message.senderId === "user"
-                              ? "bg-blue-600 text-white"
+                              ? "bg-[#D78B9A] text-white"
                               : "bg-white text-gray-900 border"
                           }`}
                         >
@@ -180,7 +180,7 @@ function MessagesContent() {
                           <p
                             className={`text-xs mt-1 ${
                               message.senderId === "user"
-                                ? "text-blue-100"
+                                ? "text-[#F5E6C5]"
                                 : "text-gray-500"
                             }`}
                           >

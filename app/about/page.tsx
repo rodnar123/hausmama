@@ -7,13 +7,13 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20">
+      <section className="bg-gradient-to-br from-[#F5E6C5] to-[#e8d9b5] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              About HausMama
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              About <span className="text-[#3F422F]">HausMama</span>
             </h1>
-            <p className="text-xl text-blue-100">
+            <p className="text-xl text-gray-600">
               Connecting Papua New Guinea families with trusted service providers since 2023
             </p>
           </div>
@@ -36,10 +36,10 @@ export default function AboutPage() {
                 We're not just a marketplace—we're building trust, creating opportunities, and strengthening communities across Papua New Guinea.
               </p>
             </div>
-            <div className="bg-blue-50 p-8 rounded-2xl">
+            <div className="bg-[#F5E6C5] p-8 rounded-2xl">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-600 text-white w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="bg-gradient-to-br from-[#D78B9A] to-[#c77686] text-white w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Target size={24} />
                   </div>
                   <div>
@@ -51,7 +51,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-600 text-white w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="bg-gradient-to-br from-[#9F886F] to-[#8a7861] text-white w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Heart size={24} />
                   </div>
                   <div>
@@ -63,7 +63,7 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-600 text-white w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="bg-gradient-to-br from-[#3F422F] to-[#2d2f21] text-white w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Award size={24} />
                   </div>
                   <div>
@@ -92,30 +92,30 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <Card className="text-center">
+            <Card className="text-center hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <p className="text-4xl font-bold text-blue-600 mb-2">150+</p>
+                <p className="text-4xl font-bold text-[#3F422F] mb-2">150+</p>
                 <p className="text-gray-600">Verified Providers</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <p className="text-4xl font-bold text-blue-600 mb-2">500+</p>
+                <p className="text-4xl font-bold text-[#D78B9A] mb-2">500+</p>
                 <p className="text-gray-600">Lae Families Served</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <p className="text-4xl font-bold text-blue-600 mb-2">3,000+</p>
+                <p className="text-4xl font-bold text-[#9F886F] mb-2">3,000+</p>
                 <p className="text-gray-600">Services Completed</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <p className="text-4xl font-bold text-blue-600 mb-2">4.8/5</p>
+                <p className="text-4xl font-bold text-[#3F422F] mb-2">4.8/5</p>
                 <p className="text-gray-600">Average Rating</p>
               </CardContent>
             </Card>
@@ -136,9 +136,11 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <CardHeader>
-                <MapPin className="text-blue-600 mb-4" size={40} />
+                <div className="bg-[#F5E6C5] text-[#3F422F] w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <MapPin size={32} />
+                </div>
                 <CardTitle>Local Focus</CardTitle>
               </CardHeader>
               <CardContent>
@@ -148,9 +150,11 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <CardHeader>
-                <Users className="text-blue-600 mb-4" size={40} />
+                <div className="bg-[#F5E6C5] text-[#D78B9A] w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <Users size={32} />
+                </div>
                 <CardTitle>Community First</CardTitle>
               </CardHeader>
               <CardContent>
@@ -160,9 +164,11 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <CardHeader>
-                <TrendingUp className="text-blue-600 mb-4" size={40} />
+                <div className="bg-[#F5E6C5] text-[#9F886F] w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
+                  <TrendingUp size={32} />
+                </div>
                 <CardTitle>Growing Together</CardTitle>
               </CardHeader>
               <CardContent>
@@ -195,7 +201,7 @@ export default function AboutPage() {
             ].map((member) => (
               <Card key={member.name}>
                 <CardContent className="p-8 text-center">
-                  <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4">
+                  <div className="w-24 h-24 bg-[#9F886F] rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4">
                     {member.name.charAt(0)}
                   </div>
                   <h3 className="font-bold text-lg mb-1">{member.name}</h3>
@@ -209,22 +215,22 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-blue-600 text-white">
+      <section className="py-20 bg-[#3F422F] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Join the HausMama Community
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/90">
             Whether you need services or want to provide them, we're here for you
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/signup">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8">
+              <Button size="lg" className="bg-white text-[#3F422F] hover:bg-gray-100 text-lg px-8">
                 Get Started
               </Button>
             </Link>
             <Link href="/become-provider">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700 text-lg px-8">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#3F422F] text-lg px-8">
                 Become a Provider
               </Button>
             </Link>

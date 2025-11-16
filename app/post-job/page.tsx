@@ -77,27 +77,27 @@ export default function PostJobPage() {
         {/* Progress Steps */}
         <div className="mb-8">
           <div className="flex items-center justify-center space-x-4">
-            <div className={`flex items-center ${step >= 1 ? "text-blue-600" : "text-gray-400"}`}>
+            <div className={`flex items-center ${step >= 1 ? "text-[#3F422F]" : "text-gray-400"}`}>
               <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
-                step >= 1 ? "bg-blue-600 text-white" : "bg-gray-200"
+                step >= 1 ? "bg-[#3F422F] text-white" : "bg-gray-200"
               }`}>
                 1
               </div>
               <span className="ml-2 hidden sm:inline">Service Type</span>
             </div>
             <div className="w-16 h-0.5 bg-gray-300"></div>
-            <div className={`flex items-center ${step >= 2 ? "text-blue-600" : "text-gray-400"}`}>
+            <div className={`flex items-center ${step >= 2 ? "text-[#3F422F]" : "text-gray-400"}`}>
               <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
-                step >= 2 ? "bg-blue-600 text-white" : "bg-gray-200"
+                step >= 2 ? "bg-[#3F422F] text-white" : "bg-gray-200"
               }`}>
                 2
               </div>
               <span className="ml-2 hidden sm:inline">Job Details</span>
             </div>
             <div className="w-16 h-0.5 bg-gray-300"></div>
-            <div className={`flex items-center ${step >= 3 ? "text-blue-600" : "text-gray-400"}`}>
+            <div className={`flex items-center ${step >= 3 ? "text-[#3F422F]" : "text-gray-400"}`}>
               <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
-                step >= 3 ? "bg-blue-600 text-white" : "bg-gray-200"
+                step >= 3 ? "bg-[#3F422F] text-white" : "bg-gray-200"
               }`}>
                 3
               </div>
@@ -119,9 +119,9 @@ export default function PostJobPage() {
                   <button
                     key={category.value}
                     onClick={() => handleServiceSelect(category.value)}
-                    className="p-6 border-2 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition-colors text-center"
+                    className="p-6 border-2 rounded-lg hover:border-[#D78B9A] hover:bg-[#F5E6C5] transition-colors text-center"
                   >
-                    <category.icon className="mx-auto mb-3 text-blue-600" size={32} />
+                    <category.icon className="mx-auto mb-3 text-[#3F422F]" size={32} />
                     <span className="text-sm font-medium">{category.label}</span>
                   </button>
                 ))}
@@ -389,8 +389,8 @@ export default function PostJobPage() {
                     </div>
                   )}
 
-                  <div className="bg-blue-50 p-4 rounded-lg">
-                    <p className="text-sm text-blue-900">
+                  <div className="bg-[#F5E6C5] p-4 rounded-lg">
+                    <p className="text-sm text-[#3F422F]">
                       <strong>What happens next?</strong> Your job will be visible to qualified providers
                       who can apply directly. You'll be notified when providers express interest, and you
                       can review their profiles and choose the best fit for your needs.

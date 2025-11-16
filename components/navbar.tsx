@@ -17,25 +17,25 @@ export default function Navbar() {
   const unreadCount = notifications.filter(n => n.unread).length
 
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
+    <nav className="bg-[#3F422F] text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-blue-600">HausMama</span>
-              <span className="ml-2 text-sm text-gray-600">PNG</span>
+              <span className="text-2xl font-bold text-white">HausMama</span>
+              <span className="ml-2 text-sm text-[#F5E6C5]">PNG</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link href="/services" className="text-white hover:text-[#F5E6C5] transition-colors">
               Services
             </Link>
-            <Link href="/become-provider" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link href="/become-provider" className="text-white hover:text-[#F5E6C5] transition-colors">
               Become a Provider
             </Link>
-            <Link href="/how-it-works" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link href="/how-it-works" className="text-white hover:text-[#F5E6C5] transition-colors">
               How it Works
             </Link>
             
@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setShowNotifications(!showNotifications)}
-                className="text-gray-700 hover:text-blue-600 transition-colors relative p-2"
+                className="text-white hover:text-[#F5E6C5] transition-colors relative p-2"
               >
                 <Bell size={20} />
                 {unreadCount > 0 && (
@@ -65,7 +65,7 @@ export default function Navbar() {
                         <div
                           key={notif.id}
                           className={`p-4 border-b hover:bg-gray-50 cursor-pointer ${
-                            notif.unread ? 'bg-blue-50' : ''
+                            notif.unread ? 'bg-[#F5E6C5]' : ''
                           }`}
                         >
                           <p className="text-sm text-gray-900 mb-1">{notif.message}</p>
@@ -82,7 +82,7 @@ export default function Navbar() {
                   <div className="p-3 border-t text-center">
                     <Link
                       href="/dashboard"
-                      className="text-sm text-blue-600 hover:underline"
+                      className="text-sm text-[#3F422F] hover:underline"
                       onClick={() => setShowNotifications(false)}
                     >
                       View all notifications
@@ -104,7 +104,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600"
+              className="text-white hover:text-[#F5E6C5]"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -118,28 +118,28 @@ export default function Navbar() {
           <div className="px-4 pt-2 pb-3 space-y-1">
             <Link
               href="/services"
-              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md"
+              className="block px-3 py-2 text-gray-700 hover:bg-[#F5E6C5] rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link
               href="/become-provider"
-              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md"
+              className="block px-3 py-2 text-gray-700 hover:bg-[#F5E6C5] rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Become a Provider
             </Link>
             <Link
               href="/how-it-works"
-              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md"
+              className="block px-3 py-2 text-gray-700 hover:bg-[#F5E6C5] rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               How it Works
             </Link>
             <Link
               href="/dashboard"
-              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md relative"
+              className="block px-3 py-2 text-gray-700 hover:bg-[#F5E6C5] rounded-md relative"
               onClick={() => setIsMenuOpen(false)}
             >
               Notifications

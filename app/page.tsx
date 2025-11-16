@@ -25,8 +25,8 @@ const services = [
     description: "Nannies, babysitters, and daycare providers",
     details: "From newborns to school-age children",
     href: "/services/childcare",
-    color: "text-pink-600",
-    bgColor: "bg-pink-50",
+    color: "text-[#D78B9A]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "150+"
   },
   {
@@ -35,8 +35,8 @@ const services = [
     description: "Professional cleaning and home maintenance",
     details: "Daily, weekly, or one-time cleaning",
     href: "/services/housekeeping",
-    color: "text-blue-600",
-    bgColor: "bg-blue-50",
+    color: "text-[#3F422F]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "200+"
   },
   {
@@ -45,8 +45,8 @@ const services = [
     description: "Expert lawn care and landscaping",
     details: "Yard maintenance and garden design",
     href: "/services/gardening",
-    color: "text-green-600",
-    bgColor: "bg-green-50",
+    color: "text-[#3F422F]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "120+"
   },
   {
@@ -55,8 +55,8 @@ const services = [
     description: "Academic support for all subjects and grades",
     details: "Primary, secondary, and university",
     href: "/services/tutoring",
-    color: "text-purple-600",
-    bgColor: "bg-purple-50",
+    color: "text-[#9F886F]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "110+"
   },
   {
@@ -65,8 +65,8 @@ const services = [
     description: "Meal preparation and catering services",
     details: "Traditional PNG and modern cuisine",
     href: "/services/cooking",
-    color: "text-yellow-600",
-    bgColor: "bg-yellow-50",
+    color: "text-[#D78B9A]",
+    bgColor: "bg-[#F5E6C5]",
     providers: "75+"
   }
 ]
@@ -100,11 +100,11 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+      <section className="bg-gradient-to-br from-[#F5E6C5] to-[#e8d9b5] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Find Quality Care in <span className="text-blue-600">Papua New Guinea</span>
+              Find Quality Care in <span className="text-[#3F422F]">Papua New Guinea</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Connect with trusted local service providers for child care, senior care, housekeeping, and more. 
@@ -199,7 +199,7 @@ export default function HomePage() {
             <div className="hidden md:block absolute top-12 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200" />
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white w-24 h-24 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
+              <div className="bg-gradient-to-br from-[#D78B9A] to-[#c77686] text-white w-24 h-24 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
                 1
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
@@ -209,15 +209,15 @@ export default function HomePage() {
                 </p>
                 <ul className="text-sm text-gray-500 space-y-2">
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#D78B9A] rounded-full mr-2"></span>
                     Filter by location and price
                   </li>
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#D78B9A] rounded-full mr-2"></span>
                     View verified providers
                   </li>
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#D78B9A] rounded-full mr-2"></span>
                     Read genuine reviews
                   </li>
                 </ul>
@@ -225,7 +225,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white w-24 h-24 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
+              <div className="bg-gradient-to-br from-[#9F886F] to-[#8a7861] text-white w-24 h-24 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
                 2
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
@@ -235,15 +235,15 @@ export default function HomePage() {
                 </p>
                 <ul className="text-sm text-gray-500 space-y-2">
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#9F886F] rounded-full mr-2"></span>
                     Check availability schedules
                   </li>
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#9F886F] rounded-full mr-2"></span>
                     Message providers directly
                   </li>
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#9F886F] rounded-full mr-2"></span>
                     Compare rates and experience
                   </li>
                 </ul>
@@ -251,7 +251,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white w-24 h-24 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
+              <div className="bg-gradient-to-br from-[#3F422F] to-[#2d2f21] text-white w-24 h-24 rounded-2xl flex items-center justify-center text-3xl font-bold mx-auto mb-6 shadow-lg">
                 3
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
@@ -261,15 +261,15 @@ export default function HomePage() {
                 </p>
                 <ul className="text-sm text-gray-500 space-y-2">
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#3F422F] rounded-full mr-2"></span>
                     Secure booking system
                   </li>
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#3F422F] rounded-full mr-2"></span>
                     Flexible scheduling options
                   </li>
                   <li className="flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-[#3F422F] rounded-full mr-2"></span>
                     Leave reviews after service
                   </li>
                 </ul>
@@ -307,7 +307,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature) => (
               <div key={feature.title} className="text-center">
-                <div className="bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#F5E6C5] text-[#3F422F] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <feature.icon size={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -334,7 +334,7 @@ export default function HomePage() {
             <Card className="border-2">
               <CardHeader>
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  <div className="w-14 h-14 bg-[#D78B9A] rounded-full flex items-center justify-center text-white text-xl font-bold">
                     S
                   </div>
                   <div>
@@ -358,7 +358,7 @@ export default function HomePage() {
             <Card className="border-2">
               <CardHeader>
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  <div className="w-14 h-14 bg-[#9F886F] rounded-full flex items-center justify-center text-white text-xl font-bold">
                     D
                   </div>
                   <div>
@@ -382,7 +382,7 @@ export default function HomePage() {
             <Card className="border-2">
               <CardHeader>
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  <div className="w-14 h-14 bg-[#3F422F] rounded-full flex items-center justify-center text-white text-xl font-bold">
                     G
                   </div>
                   <div>
@@ -406,7 +406,7 @@ export default function HomePage() {
             <Card className="border-2">
               <CardHeader>
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  <div className="w-14 h-14 bg-[#D78B9A] rounded-full flex items-center justify-center text-white text-xl font-bold">
                     J
                   </div>
                   <div>
@@ -430,7 +430,7 @@ export default function HomePage() {
             <Card className="border-2">
               <CardHeader>
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  <div className="w-14 h-14 bg-[#9F886F] rounded-full flex items-center justify-center text-white text-xl font-bold">
                     E
                   </div>
                   <div>
@@ -454,7 +454,7 @@ export default function HomePage() {
             <Card className="border-2">
               <CardHeader>
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  <div className="w-14 h-14 bg-[#3F422F] rounded-full flex items-center justify-center text-white text-xl font-bold">
                     M
                   </div>
                   <div>
@@ -486,7 +486,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-[#3F422F] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Get Started?
@@ -501,7 +501,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <Link href="/become-provider">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#3F422F]">
                 Become a Provider
               </Button>
             </Link>
